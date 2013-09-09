@@ -46,12 +46,12 @@ USE_I18N = True
 
 # Absolute path to the directory that holds media.
 # Example: "/home/media/media.lawrence.com/"
-MEDIA_ROOT = BASE_PATH+'/media'
+MEDIA_ROOT = '/home/menders/vorm/vorm/media/'
 
 # URL that handles the media served from MEDIA_ROOT. Make sure to use a
 # trailing slash if there is a path component (optional in other cases).
 # Examples: "http://media.lawrence.com", "http://example.com/media/"
-MEDIA_URL = '/media/'
+MEDIA_URL = 'http://www.basvanijzendoorn.nl/media/'
 
 # The absolute path to the directory where collectstatic will collect static files for deployment.
 # Example: "/home/example.com/static/"
@@ -59,7 +59,7 @@ STATIC_ROOT = BASE_PATH+'/static/'
 
 # URL to use when referring to static files located in STATIC_ROOT.
 # Examples: "/static/", "http://static.example.com/"
-STATIC_URL = '/static/'
+STATIC_URL = 'http://static.basvanijzendoorn.nl/'
 
 # Make this unique, and don't share it with anybody.
 SECRET_KEY = '-b4an*a8dbf7p*tzdq&amp;_j)t(swf8re#c)iv-^v+$rl%$6sbgnn'
@@ -98,6 +98,7 @@ INSTALLED_APPS = (
     'django.contrib.staticfiles',
     'django.contrib.admin',
     'django.contrib.admindocs',
+    'website',
 )
 
 ALLOWED_HOSTS = '*'

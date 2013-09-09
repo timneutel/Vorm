@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Vorm</title>
+    </head>
+    <body>
+        <style>
+            header {
+                position: absolute;
+                background-color: white;
+                width: 100%;
+                margin: 0;
+                padding: 0;
+                border-color: white;
+                border: 6px 6px 6px 6px;
+                border-style: solid solid transparent solid;
+                background-clip: padding-box;
+                -webkit-background-clip: padding;
+                -moz-background-clip: padding;
+                z-index:1;
+            }
+
+        </style>
+        <header>
+            <img src = '{{STATIC_URL}}vorm-logo.png'>
+        </header>
+        <article>
+            {% block body %}{% endblock %}
+        </article>
+    </body>
+</html>

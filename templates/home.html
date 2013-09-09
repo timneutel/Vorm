@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+
+{% block body %}
+<style>
+    article img {
+        height: 150px;   
+        opacity: 0.6;
+        transition: opacity 0.4s;
+        -webkit-transition: opacity 0.4s; /* Safari */
+    }
+    article {
+        background-color: #EDEDED;
+    }
+    
+    article img:hover{
+        opacity: 1.0;
+        
+    }
+</style>
+{% for design in designs %}
+    <img class='bimage' src='{{MEDIA_URL}}{{design.image}}'>
+{% endfor %}
+{% endblock %}
